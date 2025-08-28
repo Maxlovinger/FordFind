@@ -1,11 +1,11 @@
 import { Suspense } from 'react'
 import Spinner from '@/components/Spinner'
-import Dashboard from './Dashboard'
+import Schedule from './Schedule'
 
-export default function DashboardPage() {
+export default function SchedulePage() {
   return (
     <Suspense fallback={<Spinner />}>
-      <Dashboard />
+      <Schedule />
     </Suspense>
   )
 }
