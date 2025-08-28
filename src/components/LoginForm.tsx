@@ -35,7 +35,7 @@ export default function LoginForm() {
           Email
         </label>
         <input
-          className="w-full px-3 py-2 border rounded-md"
+          className="w-full px-3 py-2 border rounded-md bg-background text-foreground"
           type="email"
           id="email"
           value={email}
@@ -48,7 +48,7 @@ export default function LoginForm() {
           Password
         </label>
         <input
-          className="w-full px-3 py-2 border rounded-md"
+          className="w-full px-3 py-2 border rounded-md bg-background text-foreground"
           type="password"
           id="password"
           value={password}
