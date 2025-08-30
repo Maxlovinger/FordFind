@@ -93,7 +93,7 @@ export default function ScheduleForm({ onSuccess }: ScheduleFormProps) {
               type="button"
               onClick={() => handleDayChange(day)}
               className={`px-3 py-1 border rounded-md ${
-                daysOfWeek.includes(day) ? 'bg-haverford-red text-white' : ''
+                daysOfWeek.includes(day) ? 'bg-redPrimary text-white' : ''
               }`}
             >
               {day}

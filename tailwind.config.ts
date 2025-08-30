@@ -7,28 +7,17 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      redPrimary: '#c8102e',
+      redLight: '#e06666',
+      redDark: '#9e0d23',
+      blackPrimary: '#1a1a1a',
+      whitePrimary: '#ffffff',
+      primary: '#c8102e',
+      secondary: '#9e0d23',
+      accent: '#e06666',
+    },
     extend: {
-      colors: {
-        haverford: {
-          black: '#1a1a1a',
-          white: '#ffffff',
-          red: '#c8102e',
-          'light-red': '#e06666',
-          'dark-red': '#9e0d23',
-        },
-        primary: {
-          DEFAULT: 'var(--primary)',
-          foreground: 'var(--primary-foreground)',
-        },
-        secondary: {
-          DEFAULT: 'var(--secondary)',
-          foreground: 'var(--secondary-foreground)',
-        },
-        accent: {
-          DEFAULT: 'var(--accent)',
-          foreground: 'var(--accent-foreground)',
-        },
-      },
       backgroundImage: {
         'founders-pattern': "url('/founderscrop.jpg')",
       },

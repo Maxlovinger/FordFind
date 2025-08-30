@@ -55,7 +55,7 @@ input[type="email"],
 input[type="password"],
 input[type="text"] {
     @apply w-full px-3 py-2 border rounded-md bg-white dark:bg-gray-800 text-black dark:text-white border-gray-300 dark:border-gray-700;
-    @apply focus:ring-2 focus:ring-haverford-red focus:border-haverford-red;
+    @apply focus:ring-2 focus:ring-redPrimary focus:border-redPrimary;
 }
 
 /* Button Styles */
@@ -64,17 +64,17 @@ input[type="text"] {
 }
 
 .btn-primary {
-    @apply bg-haverford-red text-white;
+    @apply bg-redPrimary text-white;
 }
 
 .btn-primary:hover {
-    @apply bg-haverford-dark-red;
+    @apply bg-redDark;
 }
 
 .btn-secondary {
-    @apply bg-transparent border-2 border-haverford-red text-haverford-red;
+    @apply bg-transparent border-2 border-redPrimary text-redPrimary;
 }
 
 .btn-secondary:hover {
-    @apply bg-haverford-red text-white;
+    @apply bg-redPrimary text-white;
 }

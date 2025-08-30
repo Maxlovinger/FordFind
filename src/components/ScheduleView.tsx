@@ -17,7 +17,7 @@ export default function ScheduleView({ schedule }: ScheduleViewProps) {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {schedule.map((item) => (
         <div key={item.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-          <h2 className="text-xl font-bold text-haverford-red mb-2">{item.course_name}</h2>
+          <h2 className="text-xl font-bold text-redPrimary mb-2">{item.course_name}</h2>
           <p className="text-gray-600 dark:text-gray-400 font-mono text-sm mb-4">{item.course_code}</p>
           <div className="text-sm">
             <p className="font-semibold">{item.days_of_week.join(', ')}</p>
