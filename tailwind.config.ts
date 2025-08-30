@@ -16,8 +16,6 @@ const config: Config = {
           'light-red': '#e06666',
           'dark-red': '#9e0d23',
         },
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
         primary: {
           DEFAULT: 'var(--primary)',
           foreground: 'var(--primary-foreground)',

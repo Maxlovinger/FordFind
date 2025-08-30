@@ -40,7 +40,7 @@ export default function SignupForm() {
           Email
         </label>
         <input
-          className="w-full px-3 py-2 border rounded-md bg-background text-foreground"
+          className="w-full px-3 py-2 border rounded-md bg-white dark:bg-gray-800 text-black dark:text-white"
           type="email"
           id="email"
           value={email}
@@ -53,7 +53,7 @@ export default function SignupForm() {
           Password
         </label>
         <input
-          className="w-full px-3 py-2 border rounded-md bg-background text-foreground"
+          className="w-full px-3 py-2 border rounded-md bg-white dark:bg-gray-800 text-black dark:text-white"
           type="password"
           id="password"
           value={password}

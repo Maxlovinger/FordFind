@@ -70,7 +70,7 @@ export default function Schedule() {
       {/* Display schedule here */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {schedule.map((item) => (
-          <div key={item.id} className="p-4 border rounded-lg shadow-sm bg-background">
+          <div key={item.id} className="p-4 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
             <h2 className="font-bold text-lg">{item.course_name}</h2>
             <p className="text-gray-600">{item.course_code}</p>
             <p>{item.days_of_week.join(', ')}</p>
