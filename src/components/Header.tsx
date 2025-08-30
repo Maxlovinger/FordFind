@@ -1,26 +1,20 @@
-import Image from "next/image";
-
 export default function Header() {
   return (
     <header className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-      <Image
-        className="dark:invert"
-        src="/next.svg"
-        alt="Next.js logo"
-        width={180}
-        height={38}
-        priority
-      />
-      <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-        <li className="mb-2 tracking-[-.01em]">
-          Get started by editing{" "}
-          <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-            src/app/page.tsx
-          </code>
-          .
+      <h1 className="text-4xl font-bold text-haverford-red">FordFind</h1>
+      <ul className="nav navbar-nav">
+        <li className="dropdown">
+              <a href="#" className="dropdown-toggle" data-toggle="dropdown">
+                English(US)
+                <b className="caret"></b>
+              </a>
+              <ul className="dropdown-menu">
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">English(UK)</a></li>
+                <li><a href="#">Français</a></li>
+              </ul>
         </li>
-        <li className="tracking-[-.01em]">Save and see your changes instantly.</li>
-      </ol>
+      </ul>
     </header>
   );
 }

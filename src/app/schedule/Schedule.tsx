@@ -61,7 +61,7 @@ export default function Schedule() {
         <h1 className="text-2xl font-bold">My Schedule</h1>
         <button
           onClick={() => setIsModalOpen(true)}
-          className="bg-secondary text-secondary-foreground py-2 px-4 rounded-md hover:bg-secondary/90 transition-colors"
+          className="btn btn-primary btn-fill"
         >
           Add Class
         </button>

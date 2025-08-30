@@ -9,6 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        haverford: {
+          black: '#1a1a1a',
+          white: '#ffffff',
+          red: '#c8102e',
+          'light-red': '#e06666',
+          'dark-red': '#9e0d23',
+        },
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         primary: {
@@ -23,6 +30,9 @@ const config: Config = {
           DEFAULT: 'var(--accent)',
           foreground: 'var(--accent-foreground)',
         },
+      },
+      backgroundImage: {
+        'founders-pattern': "url('/founderscrop.jpg')",
       },
       fontFamily: {
         sans: ['var(--font-inter)'],

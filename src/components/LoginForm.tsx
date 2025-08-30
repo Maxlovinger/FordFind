@@ -57,7 +57,7 @@ export default function LoginForm() {
         />
       </div>
       <button
-        className="w-full bg-secondary text-secondary-foreground py-2 rounded-md hover:bg-secondary/90 transition-colors"
+        className="w-full btn btn-primary btn-fill"
         type="submit"
       >
         Sign In

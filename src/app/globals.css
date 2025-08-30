@@ -2,24 +2,24 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --primary: #171717;
+  --foreground: #1a1a1a;
+  --primary: #c8102e;
   --primary-foreground: #ffffff;
-  --secondary: #D92A2A;
+  --secondary: #9e0d23;
   --secondary-foreground: #ffffff;
-  --accent: #D92A2A;
+  --accent: #e06666;
   --accent-foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #ededed;
-    --primary-foreground: #0a0a0a;
-    --secondary: #D92A2A;
+    --background: #1a1a1a;
+    --foreground: #ffffff;
+    --primary: #c8102e;
+    --primary-foreground: #ffffff;
+    --secondary: #9e0d23;
     --secondary-foreground: #ffffff;
-    --accent: #D92A2A;
+    --accent: #e06666;
     --accent-foreground: #ffffff;
   }
 }
@@ -30,4 +30,58 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('/founderscrop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.btn {
+    border-width: 2px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-fill {
+    background-color: transparent;
+    border-color: #c8102e;
+    color: #c8102e;
+}
+
+.btn-fill:hover {
+    background-color: #c8102e;
+    color: #ffffff;
+}
+
+.btn-primary.btn-fill {
+    border-color: #c8102e;
+    color: #c8102e;
+}
+
+.btn-primary.btn-fill:hover {
+    background-color: #c8102e;
+    color: #ffffff;
+}
+
+.btn-danger.btn-fill {
+    border-color: #9e0d23;
+    color: #9e0d23;
+}
+
+.btn-danger.btn-fill:hover {
+    background-color: #9e0d23;
+    color: #ffffff;
 }
