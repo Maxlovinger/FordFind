@@ -25,18 +25,21 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/founderscrop.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
-body::after {
+.main-bg {
+    background-image: url('/founderscrop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-bg::after {
     content: '';
     position: absolute;
     top: 0;
@@ -47,41 +50,31 @@ body::after {
     z-index: -1;
 }
 
+/* Form Styles */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    @apply w-full px-3 py-2 border rounded-md bg-background text-foreground border-gray-300 dark:border-gray-700;
+    @apply focus:ring-2 focus:ring-haverford-red focus:border-haverford-red;
+}
+
+/* Button Styles */
 .btn {
-    border-width: 2px;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    transition: all 0.2s ease-in-out;
+    @apply font-semibold py-2 px-4 rounded-md transition-all duration-200 ease-in-out;
 }
 
-.btn-fill {
-    background-color: transparent;
-    border-color: #c8102e;
-    color: #c8102e;
+.btn-primary {
+    @apply bg-haverford-red text-white;
 }
 
-.btn-fill:hover {
-    background-color: #c8102e;
-    color: #ffffff;
+.btn-primary:hover {
+    @apply bg-haverford-dark-red;
 }
 
-.btn-primary.btn-fill {
-    border-color: #c8102e;
-    color: #c8102e;
+.btn-secondary {
+    @apply bg-transparent border-2 border-haverford-red text-haverford-red;
 }
 
-.btn-primary.btn-fill:hover {
-    background-color: #c8102e;
-    color: #ffffff;
-}
-
-.btn-danger.btn-fill {
-    border-color: #9e0d23;
-    color: #9e0d23;
-}
-
-.btn-danger.btn-fill:hover {
-    background-color: #9e0d23;
-    color: #ffffff;
+.btn-secondary:hover {
+    @apply bg-haverford-red text-white;
 }

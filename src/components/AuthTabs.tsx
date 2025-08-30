@@ -17,9 +17,9 @@ export default function AuthTabs() {
   ]
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-background">
-      <div className="w-full max-w-md p-8 space-y-8 bg-foreground text-background rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold text-center">Welcome</h1>
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="w-full max-w-md p-8 space-y-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <h1 className="text-3xl font-bold text-center text-haverford-red">FordFind</h1>
         <Tabs tabs={tabs} />
       </div>
     </div>

@@ -62,7 +62,7 @@ export default function SignupForm() {
         />
       </div>
       <button
-        className="w-full btn btn-primary btn-fill"
+        className="w-full btn btn-primary"
         type="submit"
       >
         Sign Up

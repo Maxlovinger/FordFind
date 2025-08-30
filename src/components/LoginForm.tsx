@@ -57,7 +57,7 @@ export default function LoginForm() {
         />
       </div>
       <button
-        className="w-full btn btn-primary btn-fill"
+        className="w-full btn btn-primary"
         type="submit"
       >
         Sign In
