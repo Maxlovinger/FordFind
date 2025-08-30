@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { createClient } from '@/utils/supabase/client'
 import { useRouter } from 'next/navigation'
-import ErrorDisplay from './ErrorDisplay'
+
 
 export default function LoginForm() {
   const [email, setEmail] = useState('')

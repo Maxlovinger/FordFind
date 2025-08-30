@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { createClient } from '@/utils/supabase/client'
-import ErrorDisplay from './ErrorDisplay'
+
 
 type User = {
   id: string
@@ -62,7 +62,7 @@ export default function UserSearch() {
           placeholder="Search for users..."
           className="w-full px-3 py-2 border rounded-md"
         />
-        <button type="submit" className="w-full mt-2 bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">
+        <button type="submit" className="w-full mt-2 btn btn-primary">
           Search
         </button>
       </form>

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { createClient } from '@/utils/supabase/client'
-import ErrorDisplay from './ErrorDisplay'
+
 
 type ScheduleFormProps = {
   onSuccess: () => void
@@ -93,7 +93,7 @@ export default function ScheduleForm({ onSuccess }: ScheduleFormProps) {
               type="button"
               onClick={() => handleDayChange(day)}
               className={`px-3 py-1 border rounded-md ${
-                daysOfWeek.includes(day) ? 'bg-blue-500 text-white' : ''
+                daysOfWeek.includes(day) ? 'bg-haverford-red text-white' : ''
               }`}
             >
               {day}
@@ -142,7 +142,7 @@ export default function ScheduleForm({ onSuccess }: ScheduleFormProps) {
         />
       </div>
       <button
-        className="w-full bg-secondary text-secondary-foreground py-2 rounded-md hover:bg-secondary/90 transition-colors"
+        className="w-full btn btn-primary"
         type="submit"
       >
         Add Class
